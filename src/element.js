@@ -4,7 +4,7 @@
 // 导入自己需要的组件
 import {
   Button, Select, Option, Row, Col, Input, Avatar, Carousel, CarouselItem,
-  Form, FormItem
+  Form, FormItem, Popover
 } from "element-ui";
 
 const element = {
@@ -20,6 +20,7 @@ const element = {
     Vue.use(CarouselItem);
     Vue.use(Form);
     Vue.use(FormItem);
+    Vue.use(Popover);
   }
 };
 export default element;

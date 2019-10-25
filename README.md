@@ -142,8 +142,8 @@ assets/img/myData/user_order.png
 
 ```css
 .selector > .wrapper {
-    font-family: "Hiragino Sans GB", sans-serif;
-    height: 100%;
+  font-family: "Hiragino Sans GB", sans-serif;
+  height: 100%;
 }
 ```
 
@@ -153,11 +153,11 @@ assets/img/myData/user_order.png
 
 ```css
 .wrapper {
-    height: 100%;
+  height: 100%;
 }
 
 .selector {
-    height: 100%;
+  height: 100%;
 }
 ```
 
@@ -172,8 +172,8 @@ assets/img/myData/user_order.png
 ```css
 .wrapper,
 .selector {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 ```
 
@@ -184,7 +184,7 @@ assets/img/myData/user_order.png
 ```css
 .demo-test,
 #test-demo {
-    width: 100%;
+  width: 100%;
 }
 ```
 
@@ -197,12 +197,12 @@ assets/img/myData/user_order.png
 ```css
 /* good */
 .selector {
-    color: #abc;
+  color: #abc;
 }
 
 /* bad */
 .selector {
-    color: #AABBCC;
+  color: #AABBCC;
 }
 ```
 
@@ -213,16 +213,16 @@ assets/img/myData/user_order.png
 ```css
 /* better */
 .selector {
-    background: rgba(0, 0, 0, 0.5) url(logo.png) no-repeat center / contain;
+  background: rgba(0, 0, 0, 0.5) url(logo.png) no-repeat center / contain;
 }
 
 /* bad */
 .selector {
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url(logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 ```
 

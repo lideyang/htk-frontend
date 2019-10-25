@@ -1,3 +1,5 @@
+//公共
+export const SET_RIGHT_MENU_VISIBLE = "SET_RIGHT_MENU_VISIBLE"; //设置登录后路由权限
 //路由
 export const SET_ROUTERS = "SET_ROUTERS"; //设置登录后路由权限
 //注册

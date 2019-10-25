@@ -3,7 +3,7 @@
     <head-nav></head-nav>
     <main-content></main-content>
     <footer-nav></footer-nav>
-    <back-top></back-top>
+    <right-menu v-if="rightMenuVisible"></right-menu>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import {mapGetters} from "vuex";
 import HeadNav from "@/layout/headNav";
 import MainContent from "@/layout/content";
 import FooterNav from "@/layout/footerNav";
-import backTop from "@/components/backTop";
+import rightMenu from "@/layout/rightMenu";
 
 export default {
   name: "home",
@@ -20,13 +20,13 @@ export default {
     return {};
   },
   computed: {
-    ...mapGetters(["sidebar"]),
+    ...mapGetters(["rightMenuVisible"]),
   },
   components: {
     HeadNav,
     MainContent,
     FooterNav,
-    backTop
+    rightMenu
   },
   created() {
   },

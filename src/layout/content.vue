@@ -34,7 +34,7 @@ export default {
 
   .main-content {
     position: relative;
-    padding-bottom: 380px;
+    padding-bottom: 3380px;
 
     .app-view {
       position: absolute;
