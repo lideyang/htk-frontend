@@ -1,0 +1,152 @@
+@import "variables";
+
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-family: "Microsoft Yahei", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/*辅助类*/
+.radius {
+  border-radius: 30px;
+}
+
+.round {
+  border-radius: 16px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+/*font*/
+.bold {
+  font-weight: bold;
+}
+
+/* Float blocks*/
+.cf {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Display */
+.block {
+  display: block !important;
+}
+
+.inline {
+  display: inline !important;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.hide {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
+
+.text-default {
+  color: @global-default;
+}
+
+.text-primary {
+  color: @global-primary;
+}
+
+.text-secondary {
+  color: @global-secondary;
+}
+
+.text-warning {
+  color: @global-warning;
+}
+
+.text-muted {
+  color: #999
+}
+
+.text-xs {
+  font-size: @font-size-xs;
+}
+
+.text-sm {
+  font-size: @font-size-sm;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-block {
+  width: 100%;
+  display: block;
+}
