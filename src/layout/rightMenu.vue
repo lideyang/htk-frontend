@@ -1,7 +1,7 @@
 <template>
   <ul class="menu-right text-center" ref="menuTop">
     <li>
-      <el-popover popper-class="app-download-pop" placement="left" trigger="click">
+      <el-popover popper-class="app-download-pop" placement="left" trigger="hover">
         <div><img class="app-code-pic" src="@/assets/img/fx110_code.jpg" /></div>
         <i slot="reference" class="el-icon-mobile"></i>
       </el-popover>
@@ -57,7 +57,7 @@ export default {
       position: relative;
       margin: 0 0 10px;
       cursor: pointer;
-
+      text-align: center;
       i {
         font-size: 30px;
       }

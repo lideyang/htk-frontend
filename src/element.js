@@ -4,7 +4,7 @@
 // 导入自己需要的组件
 import {
   Button, Select, Option, Row, Col, Input, Avatar, Carousel, CarouselItem,
-  Form, FormItem, Popover
+  Form, FormItem, Popover, InfiniteScroll
 } from "element-ui";
 
 const element = {
@@ -21,6 +21,7 @@ const element = {
     Vue.use(Form);
     Vue.use(FormItem);
     Vue.use(Popover);
+    Vue.use(InfiniteScroll);
   }
 };
 export default element;

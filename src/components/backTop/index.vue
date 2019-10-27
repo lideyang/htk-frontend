@@ -1,13 +1,10 @@
 <template>
   <div
-    class="backTop"
-    :style="{'opacity':opacity}"
-    v-show="gotop"
-    @mouseenter="enterBackTop"
-    @mouseout="outBackTop"
     @click="handleScrollTop"
+    class="backTop"
+    v-show="goTop"
   >
-    <div class="back"></div>
+    <i class="back-icon el-icon-arrow-up"></i>
   </div>
 </template>
 
@@ -17,8 +14,7 @@ export default {
   name: "backTop",
   data() {
     return {
-      opacity: ".3",
-      gotop: false,
+      goTop: false,
       scrollHeight: 100
     };
   },
@@ -31,19 +27,13 @@ export default {
     window.addEventListener("scroll", this.handleScroll, true);
   },
   methods: {
-    enterBackTop() {
-      this.opacity = "1";
-    },
-    outBackTop() {
-      this.opacity = ".3";
-    },
     handleScroll(e) {
-      let scrolltop = e.target.scrollTop;
-      scrolltop > this.scrollHeight ? (this.gotop = true) : (this.gotop = false);
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      scrollTop > this.scrollHeight ? (this.goTop = true) : (this.goTop = false);
     },
     handleScrollTop() {
       this.$nextTick(() => {
-        this.ele.scrollTop = 0;
+        document.documentElement.scrollTop = document.body.scrollTop = 0;
       });
     }
   }
@@ -52,21 +42,11 @@ export default {
 
 <style lang="less" scoped>
   .backTop {
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    z-index: 10;
     cursor: pointer;
+    margin: 0 auto;
 
-    .back {
-      width: 40px;
-      height: 40px;
-      overflow: hidden;
-      color: #fff;
-      text-align: center;
-      border-radius: 50%;
-      transition: all .3s;
-      box-shadow: 0 0 15px 1px rgba(69, 65, 78, .1)
+    .back-icon {
+      font-size: 36px;
     }
   }
 </style>

@@ -29,7 +29,15 @@ export const constantRouterMap = [
       title: "首页",
     },
     component: () => import("@/view/index")
-  }
+  },
+  {
+    path: "/video/detail",
+    name: "videoDetail",
+    meta: {
+      title: "视频详情",
+    },
+    component: () => import("@/view/video/detail")
+  },
 ];
 
 //注册路由
